@@ -1,3 +1,7 @@
+//adds interactivity and responsiveness to a webpage.
+//uses vanilla JS & JQuery
+///tabs, menus, animations , sliders etc
+
 (function($) {
 
   "use strict";
@@ -20,6 +24,7 @@
   });
 
   // Responsive Navigation with Button
+  //Mobile friendly toggle menu
 
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".menu-list");
@@ -61,6 +66,8 @@
         imageSize: 'contain',
         loop: true,
     })
+    
+    //toggle- is like a switch, flips btw two options (like showing or hiding an element / adding or removing a class)
 
     $('#header-wrap').on('click', '.search-toggle', function(e) {
       var selector = $(this).data('selector');
@@ -118,9 +125,6 @@
               slidesToScroll: 1
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
     });
 
